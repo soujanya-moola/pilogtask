@@ -1,8 +1,8 @@
-import { Article } from '@mui/icons-material'
+
 import React, { useEffect, useState } from 'react'
 import './Home.css'
-import { Button, Card, CardActions, CardContent, CardMedia, Container, Grid, Rating, Typography } from '@mui/material'
-import { Carousel } from 'react-bootstrap';
+import { Button, Card, CardContent, Container, Grid } from '@mui/material'
+
 import ImageSlides from './ImageSlides';
 import SlideImages from './SlideImages';
 import Footer from './Footer';
@@ -37,32 +37,23 @@ const Home = () => {
         <div className='main-home'>
 
             <div className='slider-page'>
-                <SlideImages/>
+                <SlideImages />
             </div>
             <div className='companies'>
-               
-                <img className='company-img' src={require('./sipchem.jpg')}/>
-                <img className='company-img' src={require('./orpic.png')}/>
-                <img className='company-img' src={require('./technip.jpg')}/>
-                <img className='company-img' src={require('./yansab.png')}/>
-                <img  className='company-img' src={require('./orpic.png')}/>
+
+                <img className='company-img' src={require('./sipchem.jpg')} alt='' />
+                <img className='company-img' src={require('./orpic.png')} alt='' />
+                <img className='company-img' src={require('./technip.jpg')} alt='' />
+                <img className='company-img' src={require('./yansab.png')} alt='' />
+                <img className='company-img' src={require('./orpic.png')} alt='' />
             </div>
             <div className='works-div'>
-               
-                    <div className='works'>
-                Airpot and navogation <span>|</span>
-                cement<span>|</span>
-                Chemicals and Refineries<span>|</span>
-
-                Defence
-
-               
-                
+                <div className='works'>
+                    Airpot and navogation <span>|</span>
+                    cement<span>|</span>
+                    Chemicals and Refineries<span>|</span>
+                    Defence
                 </div>
-                        
-                
-                
-
             </div>
 
             <div className="parent">
@@ -93,7 +84,7 @@ const Home = () => {
 
             <div className='inn-div'>
                 <div className='inn-main'>
-                    <img className='inn-img' src={require('./1579568.png')} />
+                    <img className='inn-img' src={require('./1579568.png')} alt='' />
                     <h3>Innovate</h3>
 
                 </div>
@@ -115,7 +106,7 @@ const Home = () => {
                     <Grid container spacing={2}>
                         <Grid item xl={3} lg={3} md={5} xs={12}>
                             <Card sx={{ maxWidth: 250 }} className='achiv-card'>
-                                <img className='ach-img1' src={require('./customer-first-gartner-blue-1.webp')} />
+                                <img className='ach-img1' src={require('./customer-first-gartner-blue-1.webp')} alt='' />
                                 <CardContent>
                                     <h4>Gartner Peer Insights
                                         “Customer First Vendor”
@@ -125,18 +116,7 @@ const Home = () => {
                         </Grid>
                         <Grid item lg={3} md={5} xs={12}>
                             <Card sx={{ maxWidth: 250 }} className='achiv-card'>
-                                <img className='ach-img' src={require('./award-two.webp')} />
-                                <CardContent>
-                                    <h4>Gartner Peer Insights
-                                        “Customer First Vendor”
-                                        for Master Data Management Solutions</h4>
-                                </CardContent>
-                            </Card>
-
-                        </Grid>
-                        <Grid item lg={3} md={5} xs={12}>
-                            <Card sx={{ maxWidth: 250 }} className='achiv-card'>
-                                <img className='ach-img' src={require('./award-three.webp')} />
+                                <img className='ach-img' src={require('./award-two.webp')} alt='' />
                                 <CardContent>
                                     <h4>Gartner Peer Insights
                                         “Customer First Vendor”
@@ -147,7 +127,18 @@ const Home = () => {
                         </Grid>
                         <Grid item lg={3} md={5} xs={12}>
                             <Card sx={{ maxWidth: 250 }} className='achiv-card'>
-                                <img className='ach-img' src={require('./gartner-peer-insights-2022.webp')} />
+                                <img className='ach-img' src={require('./award-three.webp')} alt='' />
+                                <CardContent>
+                                    <h4>Gartner Peer Insights
+                                        “Customer First Vendor”
+                                        for Master Data Management Solutions</h4>
+                                </CardContent>
+                            </Card>
+
+                        </Grid>
+                        <Grid item lg={3} md={5} xs={12}>
+                            <Card sx={{ maxWidth: 250 }} className='achiv-card'>
+                                <img className='ach-img' src={require('./gartner-peer-insights-2022.webp')} alt='' />
                                 <CardContent>
                                     <h4>Gartner Peer Insights
                                         “Customer First Vendor”
@@ -165,14 +156,14 @@ const Home = () => {
                     <div className='reviw-content'>
                         <h2>Text Slider Example</h2>
                         <TextSlider className='text-slider' texts={textArray} interval={5000} />
-                        <br/>
+                        <br />
                         <Button className='ex-btn'> Know More</Button>
                     </div>
                 </Container>
             </div>
-            <br/>
+            <br />
             <div>
-                <Footer/>
+                <Footer />
             </div>
 
         </div>

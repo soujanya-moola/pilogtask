@@ -43,7 +43,7 @@ const Header = () => {
           ) : (
             <>
               
-              <img src={require('../logo-header.png')} />
+              <img src={require('../logo-header.png')} alt='' />
               
               <Box>
                 <Tabs>

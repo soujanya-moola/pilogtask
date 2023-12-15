@@ -50,7 +50,7 @@ const Header = () => {
         <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-            <img src={require('./logo-header.png')}/>
+            <img src={require('./logo-header.png')} alt=''/>
         </div>
         <div className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
           <a href="#home">Home</a>

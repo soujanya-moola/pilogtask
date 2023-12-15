@@ -11,7 +11,7 @@ const Footer = () => {
       <Grid container spacing={2}>
         <Grid item xs={6} md={4} lg={3}>
           <Container>
-            <img src={require('./logo-header.png')}/>
+            <img src={require('./logo-header.png')} alt='logo'/>
             
             <Box sx={{marginTop:'2rem'}}>
               <FacebookIcon

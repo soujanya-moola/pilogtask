@@ -13,7 +13,7 @@ const Drawers = () => {
     <div>
       <React.Fragment >
       <Box >
-      <img src={require('../logo-header.png')} />
+      <img src={require('../logo-header.png')} alt='' />
         <IconButton  onClick={() => setOpenMenu(true)} >
           <MenuIcon style={{marginLeft: 150, justifyContent:'flex-end'}} color='black' />
         </IconButton>
