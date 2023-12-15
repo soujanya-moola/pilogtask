@@ -52,3 +52,11 @@
   .content a {
     color: white;
   }
+  .img-btn{
+    background-color: rgb(245, 81, 21) !important;
+    border-radius: 5px;
+    margin: 8px !important;
+    color: #fff !important;
+    border: none;
+    height: 35px !important;
+  }

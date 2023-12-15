@@ -1,5 +1,6 @@
 import React from 'react'
 import './ImageSlides.css'
+import { Button } from 'react-bootstrap'
 
 const ImageSlides = () => {
   return (
@@ -14,7 +15,9 @@ const ImageSlides = () => {
           <p>
             Would you like to know more about Inventory Management Solutions
           </p>
-          <a href='#' class="btn btn-blue">Read Now</a>
+          <Button className='img-btn'>
+            Read More
+          </Button>
         </div>
       </div>
     </div>
