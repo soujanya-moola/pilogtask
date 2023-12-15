@@ -1,8 +1,5 @@
 import React from 'react'
 import { AppBar, Box, Tab, Tabs, Toolbar, useMediaQuery, useTheme } from '@mui/material';
-
-import Diversity3Icon from '@mui/icons-material/Diversity3';
-
 import Drawer from './Drawers';
 
 

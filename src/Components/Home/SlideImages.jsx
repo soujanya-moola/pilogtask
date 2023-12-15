@@ -21,7 +21,7 @@ const ImageSlider = ({ images }) => {
     return (
       <div className="image-slider">
         
-        <img className='slider-img' src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
+        <img className='slider-img' src={images[currentImageIndex]} alt='' />
         <div>
         <button className='slider-btn' onClick={prevImage}>Previous</button>
         <button className='slider-btn' onClick={nextImage}>Next</button>

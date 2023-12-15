@@ -14,7 +14,7 @@ const ImageSlides = () => {
           <p>
             Would you like to know more about Inventory Management Solutions
           </p>
-          <a class="btn btn-blue">Read Now</a>
+          <a href='' class="btn btn-blue">Read Now</a>
         </div>
       </div>
     </div>
