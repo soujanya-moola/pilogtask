@@ -1,16 +1,33 @@
 .menuicon{
     color: white ;
-    display: flex;
-    justify-content: stretch !important;
+    display: block;
+    
     
   
     
 
   
 }
+.drawer-div{
+    width:100%;
+display: flex;
+
+justify-content: center;
+align-items: center;
+
+
+    
+}
+.left-img{
+
+}
+.right-icon{
+    justify-content: end;
+    
+}
 .iconbtn{
     color: white;
-    justify-content: flex-end !important;
-    align-items: flex-end !important;
+    justify-content: center !important;
+    align-items:center !important;
    
 }

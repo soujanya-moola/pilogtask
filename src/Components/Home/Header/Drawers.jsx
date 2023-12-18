@@ -11,13 +11,17 @@ const Drawers = () => {
     setOpenMenu(false);
   };
   return (
-    <div  >
+    
       <React.Fragment>
-      <Box className='menuicon'  >
-      <img src={require('../logo-header.png')} alt='' />
-        <IconButton  className='iconbtn'  onClick={() => setOpenMenu(true)} >
-          <MenuIcon  className='iconbtn'   />
+      <Box width='100%' display={'flex'} justifyContent={'space-between'} flexDirection={'row'}>
+        
+        <img src={require('../logo-header.png')} alt='' />
+        <IconButton onClick={() => setOpenMenu(true)} >
+          <MenuIcon color='white' />
         </IconButton>
+
+        
+     
       </Box>
       <Box>
         <Drawer open={openMenu}
@@ -67,7 +71,7 @@ const Drawers = () => {
         </Drawer>
       </Box>
     </React.Fragment>
-    </div>
+    
   )
 }
 
