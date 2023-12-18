@@ -102,10 +102,11 @@ const Home = () => {
             <div className='achivements'>
                 <h2> Our Achievements</h2>
                 <div className='empty'> </div>
+                <div >
                 <Container>
-                    <Grid container spacing={2}>
-                        <Grid item xl={3} lg={3} md={5} xs={12}>
-                            <Card sx={{ maxWidth: 250 }} className='achiv-card'>
+                    <Grid  container spacing={2}>
+                        <Grid item xl={3} lg={3} md={6} xs={12}>
+                            <Card className='achiv-card'>
                                 <img className='ach-img1' src={require('./customer-first-gartner-blue-1.webp')} alt='' />
                                 <CardContent>
                                     <h4>Gartner Peer Insights
@@ -114,8 +115,8 @@ const Home = () => {
                                 </CardContent>
                             </Card>
                         </Grid>
-                        <Grid item lg={3} md={5} xs={12}>
-                            <Card sx={{ maxWidth: 250 }} className='achiv-card'>
+                        <Grid item lg={3} md={6} xs={12}>
+                            <Card  className='achiv-card'>
                                 <img className='ach-img' src={require('./award-two.webp')} alt='' />
                                 <CardContent>
                                     <h4>Gartner Peer Insights
@@ -125,8 +126,8 @@ const Home = () => {
                             </Card>
 
                         </Grid>
-                        <Grid item lg={3} md={5} xs={12}>
-                            <Card sx={{ maxWidth: 250 }} className='achiv-card'>
+                        <Grid item lg={3} md={6} xs={12}>
+                            <Card  className='achiv-card'>
                                 <img className='ach-img' src={require('./award-three.webp')} alt='' />
                                 <CardContent>
                                     <h4>Gartner Peer Insights
@@ -136,8 +137,8 @@ const Home = () => {
                             </Card>
 
                         </Grid>
-                        <Grid item lg={3} md={5} xs={12}>
-                            <Card sx={{ maxWidth: 250 }} className='achiv-card'>
+                        <Grid item lg={3} md={6} xs={12}>
+                            <Card  className='achiv-card'>
                                 <img className='ach-img' src={require('./gartner-peer-insights-2022.webp')} alt='' />
                                 <CardContent>
                                     <h4>Gartner Peer Insights
@@ -149,6 +150,7 @@ const Home = () => {
                         </Grid>
                     </Grid>
                 </Container>
+                </div>
             </div>
             <div className='Review'>
 

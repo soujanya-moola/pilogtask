@@ -1,0 +1,16 @@
+.menuicon{
+    color: white ;
+    display: flex;
+    justify-content: stretch !important;
+    
+  
+    
+
+  
+}
+.iconbtn{
+    color: white;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+   
+}

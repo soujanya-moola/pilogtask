@@ -22,3 +22,21 @@
     height: 30px;
     width: 100px;
 }
+
+@media only screen and (max-width: 481px){
+   
+    .image-slider{
+        display: flex;
+        flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      width: 100%;
+    }
+    .slider-page{
+        width: 100%;
+        margin-top: -3.5rem;
+    }
+
+   
+   }

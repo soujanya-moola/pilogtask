@@ -84,8 +84,8 @@ h1{
 .achivements{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
     margin-top: 2rem;
     text-align: center;
 
@@ -97,13 +97,8 @@ h1{
     margin-bottom: 3rem;
     margin-top: -1px;
 }
-/* .achi-cont{
-    display: flex;
-    
-    justify-content: center !important;
-    align-items: center !important;
 
-} */
+
 .achiv-card{
     display: flex;
     flex-direction: column;
@@ -240,6 +235,7 @@ h1{
       align-items: center;
       font-size: 10px;
     }
+  
 .company-img{
 width: 70px;
 
@@ -264,5 +260,9 @@ width: 70px;
 width: 50px;
 
 }
+.slider-page{
+  width: 100%;
+}
+
    
    }

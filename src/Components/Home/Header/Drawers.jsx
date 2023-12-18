@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Drawer, IconButton, List, ListItemButton, ListItemText, } from '@mui/material'
 import  { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
+import './Header.css'
 
 
 const Drawers = () => {
@@ -10,12 +11,12 @@ const Drawers = () => {
     setOpenMenu(false);
   };
   return (
-    <div>
-      <React.Fragment >
-      <Box >
+    <div  >
+      <React.Fragment>
+      <Box className='menuicon'  >
       <img src={require('../logo-header.png')} alt='' />
-        <IconButton  onClick={() => setOpenMenu(true)} >
-          <MenuIcon style={{marginLeft: 150, justifyContent:'flex-end'}} color='black' />
+        <IconButton  className='iconbtn'  onClick={() => setOpenMenu(true)} >
+          <MenuIcon  className='iconbtn'   />
         </IconButton>
       </Box>
       <Box>
