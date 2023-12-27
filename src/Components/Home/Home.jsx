@@ -78,7 +78,7 @@ const Home = () => {
                 </div>
             </div>
              <div className='companies'>
-                <marquee>
+                
                 <img className='company-img' src={require('./sipchem.jpg')} alt='' />
                 <img className='company-img' src={require('./orpic.png')} alt='' />
                 <img className='company-img' src={require('./technip.jpg')} alt='' />
@@ -86,7 +86,7 @@ const Home = () => {
                 <img className='company-img' src={require('./hzl.jpg')} alt='' />
                 <img className='company-img' src={require('./aramco.png')} alt='' />
                 <img className='company-img' src={require('./arya.png')} alt='' />
-                </marquee>
+                
 
                 
             </div>
