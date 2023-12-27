@@ -1,12 +1,12 @@
 
 import React, { useEffect, useState } from 'react'
 import './Home.css'
-import { Button, Card, CardContent, Container, Grid } from '@mui/material'
+import { Button, Card, Container, Grid } from '@mui/material'
 
 import ImageSlides from './ImageSlides';
 import SlideImages from './SlideImages';
 import Footer from './Footer';
-import ChatIcon from '@mui/icons-material/Chat';
+
 
 
 
@@ -51,9 +51,7 @@ const Home = () => {
             <br/>
             <br/>
             <br/>
-            <div className='chat-icon'>
-            <ChatIcon className='icon-chat'/>
-            </div>
+           
 
             <div className='slider-page'>
                 <SlideImages />
