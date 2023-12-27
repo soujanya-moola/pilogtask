@@ -346,7 +346,7 @@ span{
 
   }
   .typing-text {
-    overflow: hidden; /* Ensures the text is not visible initially */
+    
     white-space: nowrap; /* Prevents text from wrapping */
     margin: 0; /* Removes default margin */
     letter-spacing: 0.1em; /* Adjust as needed for spacing between letters */
@@ -398,10 +398,29 @@ width: 85px;
   height: 30px;
   font-size: 0.7rem !important;
 }
+.parent {
+  width: 85%;
+  display: flex;
+  margin: 2rem;
+  
+}
+.second {
+  font-size: 12px !important;
+}
+.typing-text {
+    
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin: 0; /* Removes default margin */
+  letter-spacing: 0.1em; /* Adjust as needed for spacing between letters */
+  animation: typing 3s steps(30, end) infinite;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+}
    
    }
 
-   @media only screen and (max-width: 481px){
+   @media only screen  and (min-width: 281px) and (max-width: 481px){
     .works-div{
         display: flex;
         flex-direction: column;
@@ -442,11 +461,31 @@ width: 60px;
   font-size: 0.6rem !important;
 }
 .news{
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   padding-bottom: -5px;
 }
+.parent {
+  width: 85%;
+  display: flex;
+  overflow: hidden;
+  
+    
+  
+}
 .second {
-  font-size: 12px !important;
+  font-size: 8px !important;
+  height: 50px;
+ 
+}
+.typing-text {
+    
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin: 0; /* Removes default margin */
+  
+  animation: typing 3s steps(30, end) infinite;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
 }
 
    
