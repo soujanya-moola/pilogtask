@@ -1,46 +1,38 @@
-import React, { useState } from 'react'
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from 'react-bootstrap';
+import './SlideImages.css';
 
-import image1 from './js-slider-1.webp';
-import image2 from './js-slider-2.webp';
-import image3 from './js-slider-3-1.webp';
-import './SlideImages.css'
-
-const ImageSlider = ({ images }) => {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-    const nextImage = () => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    };
-  
-    const prevImage = () => {
-      setCurrentImageIndex(
-        (prevIndex) => (prevIndex - 1 + images.length) % images.length
-      );
-    };
-  
-    return (
-      <div className="image-slider">
-        
-        <img className='slider-img' src={images[currentImageIndex]} alt='' />
-        <div>
-        <button className='slider-btn' onClick={prevImage}>Previous</button>
-        <button className='slider-btn' onClick={nextImage}>Next</button>
-        </div>
-        
-      </div>
-    );
-  };
 
 const SlideImages = () => {
-    const imageArray = [
-        image1, image2, image3
-      ];
+   
   return (
-    <div className='slider-page'>
-      <h1>Image Slider Example</h1>
-      <ImageSlider className='main-images' images={imageArray} />
-      {/* <img src={require(imageArray)}/> */}
-    </div>
+    <Carousel data-bs-theme="dark">
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src={require('./js-slider-1.webp')}
+        alt="First slide"
+      />
+      
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src={require('./js-slider-2.webp')}
+        alt="Second slide"
+      />
+     
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src={require('./js-slider-3-1.webp')}
+        alt="Third slide"
+      />
+      
+    </Carousel.Item>
+  </Carousel>
   )
 }
 

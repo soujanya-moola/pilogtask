@@ -8,6 +8,7 @@
   .sec-cont{
     font-size: 2.5rem;
     color: rgb(245, 81, 21);
+    font-weight: 800;
   }
   .content p {
     font-size: 1.2em;
@@ -59,4 +60,25 @@
     color: #fff !important;
     border: none;
     height: 35px !important;
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+.sec-cont{
+  font-size: 2rem;
+  font-weight: 800;
+}
+.content p{
+  font-size: 16px;
+}
+  }
+
+  @media only screen and (max-width: 481px){
+    .sec-cont{
+      font-size: 1.8rem;
+      font-weight: 800;
+    }
+    .content p{
+      font-size: 14px;
+      
+    }
   }

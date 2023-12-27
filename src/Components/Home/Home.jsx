@@ -6,6 +6,7 @@ import { Button, Card, CardContent, Container, Grid } from '@mui/material'
 import ImageSlides from './ImageSlides';
 import SlideImages from './SlideImages';
 import Footer from './Footer';
+import ChatIcon from '@mui/icons-material/Chat';
 
 
 
@@ -25,6 +26,18 @@ const TextSlider = ({ texts, interval = 2000 }) => {
 };
 
 const Home = () => {
+ const [dataArray, setDataArray] = useState(['Gartner Peer Insights CustomersChoice Press ReleaseRead More Our', 'CustomersChoice Press ReleaseRead More Our', 'Insights CustomersChoice Press ReleaseRead More Our']);
+  const [currentItemIndex, setCurrentItemIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      // Update the current item index
+      setCurrentItemIndex((prevIndex) => (prevIndex + 1) % dataArray.length);
+    }, 3000);
+
+    // Clear the interval when the component is unmounted
+    return () => clearInterval(intervalId);
+  }, [dataArray]);
     const textArray = [
 
         "Thousands of our users are the heroes, every step in their transformation",
@@ -35,18 +48,17 @@ const Home = () => {
 
     return (
         <div className='main-home'>
+            <br/>
+            <br/>
+            <br/>
+            <div className='chat-icon'>
+            <ChatIcon className='icon-chat'/>
+            </div>
 
             <div className='slider-page'>
                 <SlideImages />
             </div>
-            <div className='companies'>
-
-                <img className='company-img' src={require('./sipchem.jpg')} alt='' />
-                <img className='company-img' src={require('./orpic.png')} alt='' />
-                <img className='company-img' src={require('./technip.jpg')} alt='' />
-                <img className='company-img' src={require('./yansab.png')} alt='' />
-                <img className='company-img' src={require('./orpic.png')} alt='' />
-            </div>
+           
             <div className='works-div'>
                 <div className='works'>
                     Airpot and navogation <span>|</span>
@@ -59,9 +71,26 @@ const Home = () => {
             <div className="parent">
                 <div className="news">News Update</div>
                 <div className="second">
-                    Gartner Peer Insights Customers' Choice Press ReleaseRead More Our
+                    <h5 className='typing-text'>
+                        {dataArray[currentItemIndex]}
+                         {/* Gartner Peer Insights Customers' Choice Press ReleaseRead More Our */}
+                         </h5>
+                    
 
                 </div>
+            </div>
+             <div className='companies'>
+                <marquee>
+                <img className='company-img' src={require('./sipchem.jpg')} alt='' />
+                <img className='company-img' src={require('./orpic.png')} alt='' />
+                <img className='company-img' src={require('./technip.jpg')} alt='' />
+                <img className='company-img' src={require('./yansab.png')} alt='' />
+                <img className='company-img' src={require('./hzl.jpg')} alt='' />
+                <img className='company-img' src={require('./aramco.png')} alt='' />
+                <img className='company-img' src={require('./arya.png')} alt='' />
+                </marquee>
+
+                
             </div>
             <article
                 className='article'>
@@ -104,47 +133,51 @@ const Home = () => {
                 <div className='empty'> </div>
                 <div >
                 <Container>
-                    <Grid  container spacing={2}>
+                    <Grid  container spacing={3}>
                         <Grid item xl={3} lg={3} md={6} xs={12}>
-                            <Card className='achiv-card'>
+                        <Card  className='achiv-card'>
                                 <img className='ach-img1' src={require('./customer-first-gartner-blue-1.webp')} alt='' />
-                                <CardContent>
-                                    <h4>Gartner Peer Insights
+                                <div className='card-content'>
+                                <h4>Gartner Peer Insights
                                         “Customer First Vendor”
                                         for Master Data Management Solutions</h4>
-                                </CardContent>
+
+                                </div>
                             </Card>
                         </Grid>
                         <Grid item lg={3} md={6} xs={12}>
                             <Card  className='achiv-card'>
                                 <img className='ach-img' src={require('./award-two.webp')} alt='' />
-                                <CardContent>
-                                    <h4>Gartner Peer Insights
+                                <div className='card-content'>
+                                <h4>Gartner Peer Insights
                                         “Customer First Vendor”
                                         for Master Data Management Solutions</h4>
-                                </CardContent>
+
+                                </div>
                             </Card>
 
                         </Grid>
                         <Grid item lg={3} md={6} xs={12}>
                             <Card  className='achiv-card'>
                                 <img className='ach-img' src={require('./award-three.webp')} alt='' />
-                                <CardContent>
-                                    <h4>Gartner Peer Insights
+                                <div className='card-content'>
+                                <h4>Gartner Peer Insights
                                         “Customer First Vendor”
                                         for Master Data Management Solutions</h4>
-                                </CardContent>
+
+                                </div>
                             </Card>
 
                         </Grid>
                         <Grid item lg={3} md={6} xs={12}>
                             <Card  className='achiv-card'>
-                                <img className='ach-img' src={require('./gartner-peer-insights-2022.webp')} alt='' />
-                                <CardContent>
-                                    <h4>Gartner Peer Insights
+                                <img className='ach-img2' src={require('./gartner-peer-insights-2022.webp')} alt='' />
+                                <div className='card-content'>
+                                <h4>Gartner Peer Insights
                                         “Customer First Vendor”
                                         for Master Data Management Solutions</h4>
-                                </CardContent>
+
+                                </div>
                             </Card>
 
                         </Grid>

@@ -1,25 +1,15 @@
 .menuicon{
     color: white ;
     display: block;
-    
-    
-  
-    
-
   
 }
+
 .drawer-div{
     width:100%;
 display: flex;
 
 justify-content: center;
-align-items: center;
-
-
-    
-}
-.left-img{
-
+align-items: center;    
 }
 .right-icon{
     justify-content: end;

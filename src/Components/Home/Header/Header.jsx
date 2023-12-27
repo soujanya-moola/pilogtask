@@ -1,6 +1,7 @@
 import React from 'react'
 import { AppBar, Box, Tab, Tabs, Toolbar, useMediaQuery, useTheme } from '@mui/material';
 import Drawer from './Drawers';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 const TitleName = [
@@ -17,19 +18,17 @@ const TitleName = [
   
     'SaaS',
     'Contact Us',
+
   ];
 const Header = () => {
     const isMatch = useMediaQuery(useTheme().breakpoints.down('md'))
   return (
     <div>
         <AppBar
-        
+        className='app-bar'
         elevation={1}
-        sx={{
-         
-          
-          
-        }}
+       
+       
       >
         <Toolbar sx={{ display: 'flex',color:'white', justifyContent: 'space-between' }}>
         
@@ -46,8 +45,12 @@ const Header = () => {
                 <Tabs>
                   {TitleName.map((item) => (
                     <Tab sx={{color:'white'}} label={item} key={item} />
+                    
+                    
                   ))}
+                
                 </Tabs>
+                
               </Box>
               
 

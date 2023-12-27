@@ -3,6 +3,18 @@
     margin: 0;
     padding: 0;
 }
+.chat-icon{
+  display:inline-block;
+  vertical-align: middle;
+  height: 32px;
+  
+  position: static;
+}
+.icon-chat{
+  color: rgb(47, 124, 239);
+  font-size: large;
+  vertical-align: middle;
+}
 
 .works{
     display: flex;
@@ -41,10 +53,11 @@ span{
 
 
 }
-h1{
+.header h1{
     font-size: 3em;
     margin-bottom: 20px;
     color: white !important;
+    font-weight: 800;
 }
 .ex-btn{
     background-color: rgb(245, 81, 21) !important;
@@ -100,23 +113,122 @@ h1{
 
 
 .achiv-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    border-radius: 15px !important;
-    height:250px ;
+ 
+  background: rgb(40, 99, 158) !important;
+  transition: all 0.4s;
+  border-radius: 15px !important;
+ 
+  font-size: 30px;
+  font-weight: 900;
 
    
 }
+.achiv-card:hover{
+  border-radius: 15px;
+ width: 100%;
+ height: 100%;
+  cursor: pointer !important;
+  transform: scale(1.15) !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: rgb(56, 71, 92) !important;
+}
+
 .ach-img1{
-    width: 90px;
+ 
+  width: 80px;
     margin-top: 2rem;
+ 
+}
+
+.card-content{
+  height: 100px;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.5s;
+  font-size: 0px;
+  transform: rotate(80deg) scale(-1);
+  color: #fff;
+}
+.card-content h4{
+  font-size: 12px !important;
+  font-style: italic;
+}
+.achiv-card:hover .card-content{
+  opacity: 1;
+  height: 100px;
+ 
+  
+  transform: rotate(0deg);
 }
 .ach-img{
-    width: 150px;
+    width: 170px;
     margin-top: 2rem;
+}
+.ach-img2{
+  width: 120px;
+  margin-top: 2rem;
+}
+
+.card{
+  position: relative;
+  width: 250px;
+  height: 250px !important;
+  background-color: #614a4a !important;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card img {
+  width: 150px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card:hover {
+  transform: scale(1);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  background-color: #b3c9e1 !important;
+}
+.card-cont{
+  position: absolute;
+  top: 0 !important;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg) !important;
+  transform-origin: bottom !important;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+
+}
+.card:hover .card__cont {
+  transform: rotateX(90deg) !important;
+}
+.card__title {
+  margin: 0;
+  font-size: 24px !important;
+  color: #333;
+  font-weight: 700;
+}
+.card:hover img {
+  scale: 0;
+}
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px !important;
+  color: #777;
+  line-height: 1.4;
 }
 .Review{
     display: flex;
@@ -149,6 +261,10 @@ h1{
     font-weight: bold;
     padding: 10px;
     padding-left: 10px;
+   
+   
+    
+    
   }
   
   .second {
@@ -222,6 +338,27 @@ h1{
     align-items: center;
     margin: 2rem;
   }
+  .reviw-content h2{
+    color: rgb(8, 8, 8);
+    font-size: 2rem;
+    font-weight: 800;
+
+  }
+  .typing-text {
+    overflow: hidden; /* Ensures the text is not visible initially */
+    white-space: nowrap; /* Prevents text from wrapping */
+    margin: 0; /* Removes default margin */
+    letter-spacing: 0.1em; /* Adjust as needed for spacing between letters */
+    animation: typing 3s steps(40, end) infinite;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     .works-div{
         display: flex;
@@ -233,12 +370,32 @@ h1{
       
       justify-content: center;
       align-items: center;
-      font-size: 10px;
+      font-size: 12px;
     }
+    span{
+      color: coral !important;
+      padding: 0.5rem;
+      font-size: 2rem;
+  }
   
 .company-img{
-width: 70px;
+width: 85px;
 
+}
+.header h1{
+  font-size: 2rem;
+  font-weight: 800;
+}
+.header p{
+  font-size: 12px;
+}
+.ex-btn{
+  background-color: rgb(245, 81, 21) !important;
+  border-radius: 5px;
+  margin: 5px !important;
+  color: #fff !important;
+  height: 30px;
+  font-size: 0.7rem !important;
 }
    
    }
@@ -254,14 +411,41 @@ width: 70px;
       
       justify-content: center;
       align-items: center;
-      font-size: 10px;
+      font-size: 12px;
     }
+    span{
+      color: coral !important;
+      padding: 0.5rem;
+      font-size: 2rem;
+  }
 .company-img{
-width: 50px;
+width: 60px;
 
 }
 .slider-page{
   width: 100%;
+}
+.header h1{
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+.header p{
+  font-size: 12px;
+}
+.ex-btn{
+  background-color: rgb(245, 81, 21) !important;
+  border-radius: 5px;
+  margin: 5px !important;
+  color: #fff !important;
+  height: 30px;
+  font-size: 0.6rem !important;
+}
+.news{
+  font-size: 0.8rem;
+  padding-bottom: -5px;
+}
+.second {
+  font-size: 12px !important;
 }
 
    

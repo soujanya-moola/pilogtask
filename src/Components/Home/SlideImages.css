@@ -1,42 +1,45 @@
 
-.slider-page{
-    width: 100%;
-}
-.image-slider{
-    display: flex;
-    flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: -4rem;
-  width: 100%;
-}
-.slider-img{
-    width: 100% !important;
-}
-.slider-btn{
-    background-color: rgb(245, 81, 21) !important;
-    border-radius: 5px;
-    margin: 8px !important;
-    color: #fff !important;
-    border: none;
-    height: 30px;
-    width: 100px;
-}
-
 @media only screen and (max-width: 481px){
-   
-    .image-slider{
-        display: flex;
-        flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      
-      width: 100%;
+    .arrows{
+        font-size: 10px !important;
+
     }
-    .slider-page{
+    .images{
         width: 100%;
-        margin-top: -3.5rem;
+        height: 500px !important;
+    }
+    .carousel-indicators > button{
+        width: 5px !important;
+    }
+    .carousel-control-next-icon{
+        width: 7px !important;
+       
+    }
+    .carousel-control-prev-icon{
+        
+        width: 7px !important;
     }
 
-   
-   }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .arrows{
+        font-size:15px !important;
+
+    }
+    .images{
+        width: 100% !important;
+        height: 500px !important;
+    }
+    .carousel-indicators > button{
+        width: 5px !important;
+    }
+    .carousel-control-next-icon{
+        width: 7px !important;
+       
+    }
+    .carousel-control-prev-icon{
+        
+        width: 7px !important;
+    }
+
+}
