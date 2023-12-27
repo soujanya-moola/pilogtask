@@ -331,6 +331,7 @@ span{
   .company-img{
  
     width: 150px;
+    margin: 1rem;
   }
   .companies{
     display: flex;
