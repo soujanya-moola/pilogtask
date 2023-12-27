@@ -6,6 +6,7 @@ import { Button, Card, Container, Grid } from '@mui/material'
 import ImageSlides from './ImageSlides';
 import SlideImages from './SlideImages';
 import Footer from './Footer';
+import Marquee from 'react-fast-marquee';
 
 
 
@@ -78,17 +79,15 @@ const Home = () => {
                 </div>
             </div>
              <div className='companies'>
-                
+                <Marquee>
                 <img className='company-img' src={require('./sipchem.jpg')} alt='' />
                 <img className='company-img' src={require('./orpic.png')} alt='' />
                 <img className='company-img' src={require('./technip.jpg')} alt='' />
                 <img className='company-img' src={require('./yansab.png')} alt='' />
                 <img className='company-img' src={require('./hzl.jpg')} alt='' />
                 <img className='company-img' src={require('./aramco.png')} alt='' />
-                <img className='company-img' src={require('./arya.png')} alt='' />
-                
-
-                
+                <img className='company-img' src={require('./arya.png')} alt='' /> 
+                </Marquee>   
             </div>
             <article
                 className='article'>
