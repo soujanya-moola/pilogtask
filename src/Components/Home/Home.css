@@ -402,6 +402,7 @@ width: 85px;
   width: 85%;
   display: flex;
   margin: 2rem;
+  overflow: hidden;
   
 }
 .second {
