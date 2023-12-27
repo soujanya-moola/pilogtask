@@ -26,7 +26,7 @@ const TextSlider = ({ texts, interval = 2000 }) => {
 };
 
 const Home = () => {
- const [dataArray, setDataArray] = useState(['Gartner Peer Insights CustomersChoice Press ReleaseRead More Our', 'CustomersChoice Press ReleaseRead More Our', 'Insights CustomersChoice Press ReleaseRead More Our']);
+ const [dataArray] = useState(['Gartner Peer Insights CustomersChoice Press ReleaseRead More Our', 'CustomersChoice Press ReleaseRead More Our', 'Insights CustomersChoice Press ReleaseRead More Our']);
   const [currentItemIndex, setCurrentItemIndex] = useState(0);
 
   useEffect(() => {
