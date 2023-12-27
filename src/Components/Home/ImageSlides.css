@@ -8,12 +8,14 @@
   .sec-cont{
     font-size: 2.5rem;
     color: rgb(245, 81, 21);
+    
     font-weight: 800;
   }
   .content p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 20px;
-    margin: 0 0 10px;
+    margin: 0 0 15px;
+    font-style: italic;
    
   }
   .section {
@@ -44,7 +46,7 @@
     white-space: nowrap;
     vertical-align: middle;
     cursor: pointer;
-    background: rgb(245, 81, 21);
+    background: linear-gradient( #5fabe8, #60e0d6) !important;
     background-image: none;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -52,14 +54,27 @@
   
   .content a {
     color: white;
+    
   }
   .img-btn{
     background-color: rgb(245, 81, 21) !important;
-    border-radius: 5px;
+    border-radius: 25px !important;
     margin: 8px !important;
-    color: #fff !important;
-    border: none;
-    height: 35px !important;
+    color: #f9f7f7 !important;
+    border: none !important;
+    height: 40px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+  }
+  .img-btn:hover{
+    background: linear-gradient( #5fabe8, #60e0d6) !important;
+    border-radius: 25px !important;
+    margin: 8px !important;
+    color: #090909 !important;
+    border: none !important;
+    height: 40px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
   }
 
   @media only screen and (min-width: 481px) and (max-width: 768px) {

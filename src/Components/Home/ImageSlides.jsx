@@ -1,6 +1,7 @@
 import React from 'react'
 import './ImageSlides.css'
 import { Button } from 'react-bootstrap'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const ImageSlides = () => {
   return (
@@ -16,7 +17,7 @@ const ImageSlides = () => {
             Would you like to know more about Inventory Management Solutions
           </p>
           <Button className='img-btn'>
-            Read More
+            Read More <ArrowForwardIcon/>
           </Button>
         </div>
       </div>
